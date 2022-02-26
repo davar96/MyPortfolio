@@ -394,6 +394,7 @@ img {
 .button--white {
     background-color: #fff;
     color: var(--first-color);
+    margin-bottom: var(--mb-1);
 }
 
 .button--white:hover {
@@ -657,11 +658,7 @@ img {
 }
 
 
-/* Services */
-
-
 /* Portfolio */
-
 .portfolio__container {
     overflow: initial;
 }
@@ -691,7 +688,6 @@ img {
 
 
 /* Portfolio Swiper */
-
 .swiper-button-prev::after,
 .swiper-button-next::after {
     content: '';
@@ -710,23 +706,21 @@ img {
     right: -.5rem;
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets {
+.swiper-horizontal > .swiper-pagination-bullets {
     bottom: -2.5rem;
 }
 
-.swiper-pagination-bullets-active {
+.swiper-pagination-bullet-active {
     background-color: var(--first-color);
 }
 
 .swiper-button-prev,
 .swiper-button-next,
-.swiper-pagination-bullets {
+.swiper-pagination-bullet {
     outline: none;
 }
 
-
 /* For employer */
-
 .project {
     text-align: center;
 }
@@ -807,7 +801,6 @@ img {
 
 
 /* Footer */
-
 .footer {
     padding-top: 2rem;
 }

@@ -79,7 +79,7 @@ tabs.forEach(tab => {
 })
 
 // Portfolio Swiper
-let swiper = new Swiper('.portfolio-container', {
+let swiper = new Swiper('.portfolio__container', {
     cssMode: true,
     loop: true,
 
