@@ -37,7 +37,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 // According skills
 
-const skillsContent = document.getElementsByClassName('skills-content'),
+const skillsContent = document.getElementsByClassName('skills__content'),
     skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills() {
@@ -57,15 +57,14 @@ skillsHeader.forEach((el) => {
 })
 
 // Qualification Tabs
-
 const tabs = document.querySelectorAll('[data-target]'),
-    tabContent = document.querySelectorAll('[data-content]')
+    tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
+    tab.addEventListener('click', () =>{
         const target = document.querySelector(tab.dataset.target)
 
-        tabContent.forEach(tabContent => {
+        tabContents.forEach(tabContent => {
             tabContent.classList.remove('qualification__active')
         })
 
@@ -80,7 +79,6 @@ tabs.forEach(tab => {
 })
 
 // Portfolio Swiper
-
 let swiper = new Swiper('.portfolio-container', {
     cssMode: true,
     loop: true,
