@@ -1,5 +1,4 @@
 // Menu Show Hidden
-
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -7,7 +6,6 @@ const navMenu = document.getElementById('nav-menu'),
 // Menu Show
 
 //Validate if constants exist
-
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
@@ -17,7 +15,6 @@ if (navToggle) {
 // Menu Hidden
 
 //Validate if constants exist
-
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
@@ -25,7 +22,6 @@ if (navClose) {
 }
 
 // Remove Menu Mobile
-
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
@@ -36,7 +32,6 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 // According skills
-
 const skillsContent = document.getElementsByClassName('skills__content'),
     skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -61,7 +56,7 @@ const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach(tab => {
-    tab.addEventListener('click', () =>{
+    tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target)
 
         tabContents.forEach(tabContent => {
@@ -95,7 +90,6 @@ let swiper = new Swiper('.portfolio__container', {
 });
 
 // Scroll Sections Active Link
-
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
@@ -116,12 +110,10 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 // Change Background Header
-
 function scrollHeader() {
     const nav = document.getElementById('header')
 
     //When the scroll is greater than 80 viewport height, add the scroll-header to the header tag
-
     if (this.scrollY > 80)
         nav.classList.add('scroll-header');
 
@@ -133,7 +125,6 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 // Show scroll up
-
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 460 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -145,23 +136,19 @@ function scrollUp() {
 window.addEventListener('scroll', scrollUp)
 
 // Dark and Light themes
-
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
 
 //Previously selected topic (if user selected)
-
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
 //I obtain the current theme that the interface has by validating the dark-theme class
-
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
 // I validate if the user previously chose a topic
-
 if (selectedTheme) {
     // If the validation is fulfilled, i ask what the issue was to know if i activated or deactivated the dark modern
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
@@ -169,7 +156,6 @@ if (selectedTheme) {
 }
 
 //Activate / deactivate the theme manually with the button
-
 themeButton.addEventListener('click', () => {
     //Add or remove the dark/icon theme
     document.body.classList.toggle(darkTheme)
@@ -178,3 +164,16 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+//send email with smtp
+// const btn = document.querySelector('button[name="send"]')
+// const inputs = document.querySelector('form')
+// btn.addEventListener('click', () => {
+//     Email.send({
+//         SecureToken: "721ed06e-1afd-443d-8086-d0a713c66348",
+//         To: "david.arustamyan.96@gmail.com",
+//         From: inputs.elements["email"].value,
+//         Subject: "Contact Us Query By the Customer",
+//         Body: inputs.elements["message"].value + "<br>" + inputs.elements["name"].value + "<br>" + inputs.elements["email"].value + "<br>" + inputs.elements["phone"].value
+//     }).then(msg => alert("The email successfully sent"))
+// })
