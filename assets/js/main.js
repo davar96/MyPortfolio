@@ -165,15 +165,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-//send email with smtp
-// const btn = document.querySelector('button[name="send"]')
-// const inputs = document.querySelector('form')
-// btn.addEventListener('click', () => {
-//     Email.send({
-//         SecureToken: "721ed06e-1afd-443d-8086-d0a713c66348",
-//         To: "david.arustamyan.96@gmail.com",
-//         From: inputs.elements["email"].value,
-//         Subject: "Contact Us Query By the Customer",
-//         Body: inputs.elements["message"].value + "<br>" + inputs.elements["name"].value + "<br>" + inputs.elements["email"].value + "<br>" + inputs.elements["phone"].value
-//     }).then(msg => alert("The email successfully sent"))
-// })
