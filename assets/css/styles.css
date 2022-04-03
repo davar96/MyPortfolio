@@ -537,23 +537,43 @@ img {
 }
 
 .skills__css {
-    width: 70%;
+    width: 75%;
 }
 
 .skills__js {
-    width: 60%;
+    width: 55%;
 }
 
-.skills__php {
-    width: 80%;
+.skills__sass {
+    width: 65%;
 }
 
-.skills__mysql {
+.skills__tailwind {
+    width: 50%;
+}
+
+.skills__wpf{
+    width: 75%;
+}
+
+.skills__xaml{
     width: 70%;
 }
 
-.skills__git {
+.skills__jQ{
+    width: 35%;
+}
+
+.skills__php {
+    width: 50%;
+}
+
+.skills__mysql {
     width: 60%;
+}
+
+.skills__git {
+    width: 70%;
 }
 
 .skills__figma {
@@ -561,10 +581,18 @@ img {
 }
 
 .skills__blender {
-    width: 70%;
+    width: 30%;
 }
 
 .skills__adobe {
+    width: 40%;
+}
+
+.skills__ajax{
+    width: 20%;
+}
+
+.skills__winServ{
     width: 60%;
 }
 
@@ -689,7 +717,7 @@ img {
 
 .portfolio__data {
     margin-bottom: var(--mb-0-75);
-}
+} 
 
 
 /* Portfolio Swiper */
