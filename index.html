@@ -132,8 +132,8 @@
                 <img src="assets/img/secImg.png" alt="" class="about__img">
 
                 <div class="about__data">
-                    <p class="about__description">Ponctuel, rigoureux et souciant de détail, je serais ravi d’effectuer mon stage au
-                        sein de votre société. <br>Je souhaite employer mes savoir-faire et perfectionner mes connaissances acquises lors de mes études, mais aussi développer de nouvelles compétences.
+                    <p class="about__description">Ponctuel, rigoureux et souciant de détail, je serais ravi d’effectuer mon stage au sein de votre société. <br>Je souhaite employer mes savoir-faire et perfectionner mes connaissances acquises lors de mes études, mais aussi développer
+                        de nouvelles compétences.
                     </p>
 
                     <div class="about__info">
@@ -150,7 +150,7 @@
                     </div>
 
                     <div class="about__buttons">
-                        <a download="" href="assets/pdf/Bac_3.pdf" class="button button--flex">
+                        <a download="" href="assets/pdf/CV David Arustamyan.pdf" class="button button--flex">
                             Téléchargez mon CV <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -220,6 +220,15 @@
                             </div>
 
                             <div class="skills__titles">
+                                <h3 class="skills__name">Bootstrap</h3>
+                                <span class="skills__number">Intermédiaire</span>
+                            </div>
+
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__boot"></span>
+                            </div>
+
+                            <div class="skills__titles">
                                 <h3 class="skills__name">JavaScript</h3>
                                 <span class="skills__number">Intermédiaire</span>
                             </div>
@@ -263,7 +272,7 @@
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__adobe"></span>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -311,7 +320,7 @@
                                 <span class="skills__percentage skills__ajax"></span>
                             </div>
 
-                           
+
 
                         </div>
                     </div>
@@ -359,7 +368,7 @@
                                 <span class="skills__percentage skills__blender"></span>
                             </div>
 
-                            
+
 
                         </div>
                     </div>
@@ -377,7 +386,7 @@
                 <div class="qualification__tabs">
 
                     <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                        <i class="uil uil-graduation-cap qualification__icon"></i> Education
+                        <i class="uil uil-graduation-cap qualification__icon"></i> Etudes
                     </div>
 
                     <div class="qualification__button button--flex" data-target="#work">
@@ -467,7 +476,7 @@
 
                             <div>
                                 <span class="qualification__rounder"></span>
-                                
+
                             </div>
 
                             <div>
@@ -494,7 +503,7 @@
 
                     <!-- Alien JDR 1 -->
                     <div class="portfolio__content grid swiper-slide">
-                        
+
                         <img src="assets/img/review.png" alt="" class="portfolio__img_larg">
 
                         <div class="portfolio__data">
@@ -736,7 +745,7 @@
                         <h2 class="project__title">Vous avez besoin d'un stagiaire?</h2>
                         <p class="project__description">Voila mon guide de stage</p>
 
-                        <a download="" href="assets/pdf/Bac_3.pdf" class="button button--flex button--white">
+                        <a download="" href="assets/pdf/Guide-Stages-David-Arustamyan.pdf" class="button button--flex button--white">
                             Télécharger le guide de stage
                             <i class="uil uil-download-alt button__icon"></i>
                         </a>
@@ -763,7 +772,7 @@
 
                         <div>
                             <h3 class="contact__title">GSM</h3>
-                            <span class="contact__subtitle">+32-484-30-50-37</span>
+                            <span class="contact__subtitle">+32/484-30-50-37</span>
                         </div>
                     </div>
 
@@ -772,7 +781,7 @@
 
                         <div>
                             <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">david.arustamyan.96@gmail.com</span>
+                            <span class="contact__subtitle">david.arustam96@gmail.com</span>
                         </div>
                     </div>
 
@@ -780,10 +789,41 @@
                         <i class="uil uil-map-marker contact__icon"></i>
 
                         <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">1400 Nivelles - Belgium</span>
+                            <h3 class="contact__title">Localisation</h3>
+                            <span class="contact__subtitle">1400 Nivelles - Belgique</span>
                         </div>
                     </div>
+
+                    <form action="https://formsubmit.co/david.arustam96@gmail.com" method="POST" class="contact__form grid">
+                        <div class="contact__inputs grid">
+
+                            <input type="hidden" class="contact__content" name="_subject" value="Proposition de stage!">
+
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Votre nom</label>
+                                <input type="text" class="contact__input" name="name" required>
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Votre email</label>
+                                <input type="email" class="contact__input" name="email" required>
+                                <input type="hidden" name="_next" value="https://david-arustamyan.com/merci.html">
+                            </div>
+
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+
+                            <input type="text" name="message" class="contact__input" required>
+                        </div>
+
+                        <div>
+                            <button class="button button--flex button__icon" type="submit">Envoyer<i class="uil uil-message"></i></button>
+                        </div>
+
+                    </form>
+
                 </div>
             </div>
         </section>
@@ -795,7 +835,7 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
-                    <h1 class="footer__title">David</h1>
+                    <h1 class="footer__title">David Arustamyan</h1>
                     <span class="footer__subtitle">Etudiant en 3ème année de Bachelier en Informatique de Gestion</span>
                 </div>
 
@@ -820,7 +860,7 @@
     </a>
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
-   
+
     <script src="assets/js/mediumZoom.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>

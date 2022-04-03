@@ -545,6 +545,10 @@ img {
 }
 
 .skills__sass {
+    width: 55%;
+}
+
+.skills__boot {
     width: 65%;
 }
 
@@ -552,15 +556,15 @@ img {
     width: 50%;
 }
 
-.skills__wpf{
+.skills__wpf {
     width: 75%;
 }
 
-.skills__xaml{
+.skills__xaml {
     width: 70%;
 }
 
-.skills__jQ{
+.skills__jQ {
     width: 35%;
 }
 
@@ -588,11 +592,11 @@ img {
     width: 40%;
 }
 
-.skills__ajax{
+.skills__ajax {
     width: 20%;
 }
 
-.skills__winServ{
+.skills__winServ {
     width: 60%;
 }
 
@@ -700,7 +704,6 @@ img {
     height: 300px;
     border-radius: .5rem;
     justify-self: center;
-   
 }
 
 .portfolio__img_tall {
@@ -708,7 +711,6 @@ img {
     height: 500px;
     border-radius: .5rem;
     justify-self: center;
-   
 }
 
 .portfolio__title {
@@ -726,7 +728,7 @@ img {
 
 .portfolio__data {
     margin-bottom: var(--mb-0-75);
-} 
+}
 
 
 /* Portfolio Swiper */
@@ -900,6 +902,16 @@ img {
 .footer__link,
 .footer__social {
     color: #fff;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    font-size: larger;
 }
 
 
