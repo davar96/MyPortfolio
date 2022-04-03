@@ -600,6 +600,26 @@ img {
     width: 60%;
 }
 
+.skills__en {
+    width: 65%;
+}
+
+.skills__fr {
+    width: 75%;
+}
+
+.skills__ru {
+    width: 65%;
+}
+
+.skills__ne {
+    width: 15%;
+}
+
+.skills__am {
+    width: 80%;
+}
+
 .skills__close .skills__list {
     height: 0;
     overflow: hidden;
