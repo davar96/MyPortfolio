@@ -1,971 +1,1201 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="David Arustamyan Junior Front-end developer portfolio"
+    />
+    <meta name="author" content="David Arustamyan" />
+    <meta
+      name="keywords"
+      content="developer, front-end, junior, JavaScript"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
     <!-- Unicons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>David Arustamyan Portfolio</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">David Arustamyan</a>
+      <nav class="nav container">
+        <a href="#home" class="nav__logo">David Arustamyan</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
 
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
 
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
-                        </a>
-                    </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <i class="uil uil-exchange-alt nav__icon"></i> FR
+              </a>
+            </li>
+          </ul>
 
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact
-                        </a>
-                    </li>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
 
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link">
-                            <i class="uil uil-exchange-alt nav__icon"></i> FR
-                        </a>
-                    </li>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-                </ul>
-
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-
-            </div>
-
-            <div class="nav__btns">
-
-                <!-- Theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-
-        </nav>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Main -->
     <main class="main">
-
-        <!-- Home -->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-
-                        <a href="https://www.linkedin.com/in/david-arustamyan" target="_blank" class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-
-                        <a href="https://github.com/davar96" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github"></i>
-                        </a>
-                    </div>
-
-                    <div class="home__img">
-                        <img src="assets/img/face.jpg" alt="First img" class="home__blob">
-                    </div>
-
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I am David</h1>
-                        <p class="home__description">Student in the 3rd year of a Bachelor's in Computer Science</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section class="about section" id="about">
-            <h2 class="section__title">About me</h2>
-            <span class="section__subtitle">Introduction</span>
-
-            <div class="about__container container grid">
-                <img src="assets/img/secImg.png" alt="" class="about__img">
-
-                <div class="about__data">
-                    <p class="about__description">
-                        Punctual, rigorous and attentive to detail, I would be delighted to do my internship within your company. <br> I wish to use my know-how and perfect my knowledge acquired during my studies, but also to develop new skills.
-                    </p>
-
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">3+</span>
-                            <span class="about__info-name">Years <br> experience</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">5+</span>
-                            <span class="about__info-name">Completed <br> projects<br> experience</span>
-                        </div>
-
-                    </div>
-
-                    <div class="about__buttons">
-                        <a download="" href="assets/pdf/CV David Arustamyan-EN.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
-
-            <!-- Frontend -->
-            <div class="skills__container container grid">
-                <div class="skills__content skills__open">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__titles">Frontend</h1>
-                            <span class="skills__subtitle">More than 3 years</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">HTML</h3>
-                                <span class="skills__number">Advanced</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__html"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">CSS</h3>
-                                <span class="skills__number">Advanced</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__css"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Tailwind</h3>
-                                <span class="skills__number">Beginner</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__tailwind"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">SASS</h3>
-                                <span class="skills__number">
-                                    Intermediate</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__sass"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Bootstrap</h3>
-                                <span class="skills__number">
-                                    Intermediate</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__boot"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">JavaScript</h3>
-                                <span class="skills__number">
-                                    Intermediate</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__js"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">jQuery</h3>
-                                <span class="skills__number">Beginner</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__jQ"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">WPF</h3>
-                                <span class="skills__number">Advanced</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__wpf"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">XAML</h3>
-                                <span class="skills__number">Advanced</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__xaml"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Adobe XD</h3>
-                                <span class="skills__number">Beginner</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__adobe"></span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-servers skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__titles">Backend</h1>
-                            <span class="skills__subtitle">1 ans d'experience</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">PHP</h3>
-                                <span class="skills__number">
-                                    Intermediate</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__php"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">MySQL</h3>
-                                <span class="skills__number">
-                                    Intermediate</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__mysql"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Ajax</h3>
-                                <span class="skills__number">Notions</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__ajax"></span>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Languages -->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-language skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__titles">Languages</h1>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">French</h3>
-                                <span class="skills__number">Advanced (C1)</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__fr"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">English</h3>
-                                <span class="skills__number">Advanced (C1)</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__en"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Russian</h3>
-                                <span class="skills__number">Advanced (C1)</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__ru"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Dutch</h3>
-                                <span class="skills__number">Notions</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__ne"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Armenian</h3>
-                                <span class="skills__number">Mother tongue</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__am"></span>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Other -->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-swatchbook skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__titles">Autre</h1>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data">
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Git/Github</h3>
-                                <span class="skills__number">Advanced</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__git"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Windows Server</h3>
-                                <span class="skills__number">
-                                    Intermediate</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__winServ"></span>
-                            </div>
-
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Blender</h3>
-                                <span class="skills__number">Notions</span>
-                            </div>
-
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__blender"></span>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
+      <!-- Home -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/david-arustamyan"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+
+              <a
+                href="https://github.com/davar96"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github"></i>
+              </a>
             </div>
 
-        </section>
-
-        <!-- Qualification -->
-        <section class="qualification section">
-            <h2 class="section__title">Experience</h2>
-            <span class="section__subtitle">My personal journey</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                        <i class="uil uil-graduation-cap qualification__icon"></i> Studies
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i> Work
-                    </div>
-
-                </div>
-
-                <div class="qualification__sections">
-                    <!-- Qualification Content 1 -->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!-- Qualification 1 -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">CESS-Management of very small businesses</h3>
-                                <span class="qualification__subtitle">CEFA-Court Saint Etienne</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i> 09/2015 - 06/2018
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!-- Qualification 2 -->
-                        <div class="qualification__data">
-
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Bachelor's in Computer Science</h3>
-                                <span class="qualification__subtitle">EICE-Ecaussinnes</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i> 09/2018 - ...
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Qualification 3 -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Online training courses</h3>
-                                <span class="qualification__subtitle">Udemy/YouTube</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i> 09/2018 - ...
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Qualification Content 2 -->
-                    <div class="qualification__content" data-content id="work">
-
-                        <!-- Qualification 1 -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Stagiaire en administration</h3>
-                                <span class="qualification__subtitle">Débit & Crédit-Nivelles</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i> 10/2015 - 06/2018
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!-- Qualification 2 -->
-                        <div class="qualification__data">
-
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Administrative trainee</h3>
-                                <span class="qualification__subtitle">Auditcom-Nivelles</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i> 07/2018 - ...
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio -->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">My work</span>
-
-            <div class="portfolio__container container swiper">
-                <div class="swiper-wrapper">
-
-                    <!-- Alien JDR 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-
-                        <img src="assets/img/review.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">An RPG management tool</p>
-                            <a href="https://github.com/davar96/Alien-jdr" class="button button--flex button--small portfolio__button">
-                            Github
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                        </div>
-                    </div>
-
-                    <!-- Alien JDR 2 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/AuthentificationView.png" alt="" class="portfolio__img_tall">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">Authentication page</p>
-                        </div>
-                    </div>
-
-                    <!-- Alien JDR 3 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/EnregistrementView.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">Registration page</p>
-                        </div>
-                    </div>
-
-                    <!-- Alien JDR 4 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/CreerChoisirPers.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">Career choice/creation page</p>
-                        </div>
-                    </div>
-
-                    <!-- Alien JDR 5 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/SelectionCarriereEtRace.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">Careers page</p>
-                        </div>
-                    </div>
-
-                    <!-- Alien JDR 6 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/FichePersonnage.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">Character sheet</p>
-                        </div>
-                    </div>
-
-                    <!-- Alien JDR 7 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/TalentsGeneraux.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">Talent choice page</p>
-                        </div>
-                    </div>
-
-
-                    <!-- Alien JDR 8 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/AttributsCompetences.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">Attributes and Skills</p>
-                        </div>
-                    </div>
-
-                    <!-- Alien JDR 9 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/Recapitulatif1.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Alien RPG</h3>
-                            <p class="portfolio__description">Character Summary</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Add arrows -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
+            <div class="home__img">
+              <img
+                src="assets/img/face.webp"
+                alt="David Arustamyan profile image"
+                class="home__blob"
+              />
             </div>
 
-            <div class="portfolio__container container swiper">
-                <div class="swiper-wrapper">
-                    <!-- PID E-Commerce Website 1 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/PID-E-Commerce-Website-Main.png" alt="" class="portfolio__img_tall">
+            <div class="home__data">
+              <h1 class="home__title">Hi, I am David</h1>
+              <p class="home__description">
+                “I am passionate about front-end development. I recently
+                finished my Bachelor's degree in computer science and
+                management, now I'm looking for a junior developer position.”
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">E-Commerce Website</h3>
-                            <p class="portfolio__description">Index page</p>
-                            <a href="https://github.com/davar96/PID-E-Commerce-Website" class="button button--flex button--small portfolio__button">
-                            Github
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                        </div>
-                    </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-                    <!-- PID E-Commerce Website 2 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/PID-E-Commerce-Website-Product.png" alt="" class="portfolio__img_tall">
+      <!-- About -->
+      <section class="about section" id="about">
+        <h2 class="section__title">About me</h2>
+        <span class="section__subtitle">Introduction</span>
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">E-Commerce Website</h3>
-                            <p class="portfolio__description">Product page</p>
-                        </div>
-                    </div>
+        <div class="about__container container grid">
+          <img src="assets/img/secImg.webp" alt="David Arustamyan side image" class="about__img" />
 
-                    <!-- PID E-Commerce Website 3 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/PID-E-Commerce-Website-CartEmpty.png" alt="" class="portfolio__img_tall">
+          <div class="about__data">
+            <p class="about__description">
+              “Hello, I’m David Arustamyan, I'm 25 years old and I’m passionate about building beautiful web
+              sites. I started my journey at EICE-Ecaussinnes in 2018. I fell in
+              love with development when we were asked to develope a simple web
+              site with only HTML, CSS and JavaScript, I was completely hooked.<br /><br />
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">E-Commerce Website</h3>
-                            <p class="portfolio__description">Empty cart</p>
-                        </div>
-                    </div>
+              In the years, I’ve cultivated my passion for coding by studying in
+              school, but most of all, by learning on my own.<br /><br />
 
-                    <!-- PID E-Commerce Website 4 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/PID-E-Commerce-Website-CartFull.png" alt="" class="portfolio__img_tall">
+              I’ve developed a passion for the world of web development and the
+              beauty behind building websites like the ones you will find in
+              this portfolio. I’m now looking for a junior dev position to
+              finally kick start my career and learn among professionals.”
+            </p>
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">E-Commerce Website</h3>
-                            <p class="portfolio__description">Cart with products</p>
-                        </div>
-                    </div>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">4+</span>
+                <span class="about__info-name"
+                  >Years <br />
+                  experience</span
+                >
+              </div>
 
-                    <!-- PID E-Commerce Website 5 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/PID-E-Commerce-Website-Registration.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">E-Commerce Website</h3>
-                            <p class="portfolio__description">Registration page</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Add arrows -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
+              <div>
+                <span class="about__info-title">10+</span>
+                <span class="about__info-name"
+                  >Completed <br />
+                  projects<br />
+                  experience</span
+                >
+              </div>
             </div>
 
-            <div class="portfolio__container container swiper">
-                <div class="swiper-wrapper">
-                    <!-- Fight Game -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/fightingGame.png" alt="" class="portfolio__img_larg" />
+            <div class="about__buttons">
+              <a
+                download=""
+                href="assets/pdf/CV David Arustamyan-EN.pdf"
+                class="button button--flex"
+              >
+                Download CV <i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Definitely Not MK</h3>
-                            <p class="portfolio__description">
-                                JavaScript Game
-                            </p>
-                            <a href="https://david-arustamyan-definitely-not-mk.netlify.app" class="button button--flex button--small portfolio__button">
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-                        </div>
-                    </div>
+      <!-- Skills -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
 
-                      <!-- SnakeJS -->
-                      <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/snakeJsReview.png" alt="" class="portfolio__img_larg" />
+        <!-- Frontend -->
+        <div class="skills__container container grid">
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">SnakeJS</h3>
-                            <p class="portfolio__description">
-                                JavaScript Game
-                            </p>
-                            <a href="https://david-arustamyan-snake-js.netlify.app" class="button button--flex button--small portfolio__button">
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-                        </div>
-                    </div>
+              <div>
+                <h1 class="skills__titles">Frontend</h1>
+                <span class="skills__subtitle">More than 4 years</span>
+              </div>
 
-                     <!-- PIG GAME -->
-                     <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/pigGame.png" alt="" class="portfolio__img_larg" />
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">PIG Game</h3>
-                            <p class="portfolio__description">
-                                JavaScript Game
-                            </p>
-                            <a href="https://david-arustamyan-pig-game.netlify.app" class="button button--flex button--small portfolio__button">
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-                        </div>
-                    </div>
-
-                            <!-- Guessing game -->
-                            <div class="portfolio__content grid swiper-slide">
-                                <img src="assets/img/guessingGame.png" alt="" class="portfolio__img_larg" />
-        
-                                <div class="portfolio__data">
-                                    <h3 class="portfolio__title">Guessing Game</h3>
-                                    <p class="portfolio__description">
-                                        JavaScript Game
-                                    </p>
-                                    <a href="https://david-arustamyan-guess-the-number.netlify.app" class="button button--flex button--small portfolio__button">
-                          Demo
-                          <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                                </div>
-                            </div>
-
-                    <!-- MarioJS 2 -->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/comingSoon.png" alt="" class="portfolio__img_larg">
-
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">MarioJS</h3>
-                            <p class="portfolio__description">JavaScript Game</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Coming soon
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                        </div>
-                    </div>
-
-                  
-                </div>
-
-                <!-- Add arrows -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-
-
+              <i class="uil uil-angle-down skills__arrow"></i>
             </div>
 
-        </section>
-
-        <!-- For employer -->
-        <section class="project section">
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">Do you need an intern?</h2>
-                        <p class="project__description">Here is my internship guide</p>
-
-                        <a download="" href="assets/pdf/Guide-Stages-David-Arustamyan.pdf" class="button button--flex button--white">
-                            Download the internship guide
-                            <i class="uil uil-download-alt button__icon"></i>
-                        </a>
-
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact me
-                            <i class="uil uil-message project__icon button__icon"></i>
-                        </a>
-                    </div>
-
-                    <img src="assets/img/thirdImg.png" class="project__img">
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__number">Advanced</span>
                 </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__html"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                  <span class="skills__number">Advanced</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">SASS</h3>
+                  <span class="skills__number">Advanced</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__sass"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">Bootstrap</h3>
+                  <span class="skills__number"> Intermediate</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__boot"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">Tailwind</h3>
+                  <span class="skills__number">Beginner</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__tailwind"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">JavaScript</h3>
+                  <span class="skills__number">Intermediate</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__js"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">React</h3>
+                  <span class="skills__number">Beginner</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__react"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">Adobe XD</h3>
+                  <span class="skills__number">Beginner</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__adobe"></span>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Contact Me -->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact me</h2>
+          <!-- Backend -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-servers skills__icon"></i>
 
-            <div class="contact__container container grid">
+              <div>
+                <h1 class="skills__titles">Backend</h1>
+                <span class="skills__subtitle">2 years of experience</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PHP/Symfony</h3>
+                  <span class="skills__number">Intermediate</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__php"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">MySQL</h3>
+                  <span class="skills__number"> Intermediate</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__mysql"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-language skills__icon"></i>
+
+              <div>
+                <h1 class="skills__titles">Languages</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">French</h3>
+                  <span class="skills__number">Advanced (C1)</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__fr"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">English</h3>
+                  <span class="skills__number">Advanced (C1)</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__en"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">Russian</h3>
+                  <span class="skills__number">Advanced (C1)</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__ru"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">Dutch</h3>
+                  <span class="skills__number">Notions</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__ne"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">Armenian</h3>
+                  <span class="skills__number">Mother tongue</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__am"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+
+              <div>
+                <h1 class="skills__titles">Autre</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Git/Github</h3>
+                  <span class="skills__number">Advanced</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__git"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">Windows Server</h3>
+                  <span class="skills__number"> Intermediate</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__winServ"></span>
+                </div>
+
+                <div class="skills__titles">
+                  <h3 class="skills__name">Blender</h3>
+                  <span class="skills__number">Notions</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__blender"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Qualification -->
+      <section class="qualification section">
+        <h2 class="section__title">Experience</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i> Studies
+            </div>
+
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i> Work
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!-- Qualification Content 1 -->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!-- Qualification 1 -->
+              <div class="qualification__data">
                 <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Mobile</h3>
-                            <span class="contact__subtitle">+32/484-30-50-37</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">david.arustam96@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">1400 Nivelles - Belgium</span>
-                        </div>
-                    </div>
-
-                    <form action="https://formsubmit.co/david.arustam96@gmail.com" method="POST" class="contact__form grid">
-                        <div class="contact__inputs grid">
-
-                            <input type="hidden" class="contact__content" name="_subject" value="Proposition de stage!">
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Your name</label>
-                                <input type="text" class="contact__input" name="name" required>
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Your email</label>
-                                <input type="email" class="contact__input" name="email" required>
-                                <input type="hidden" name="_next" value="http://david-arustamyan.s3-website.eu-west-3.amazonaws.com/thankYou.html">
-                            </div>
-
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea rows="5" cols="60" name="message" class="contact__input" required></textarea>
-                        </div>
-
-                        <div>
-                            <button class="button button--flex button__icon" type="submit">Send<i class="uil uil-message"></i></button>
-                        </div>
-
-                    </form>
-
+                  <h3 class="qualification__title">
+                    Bachelor's in Computer Science and Management
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >EICE - Ecaussinnes</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 09/2018 - 06/2022
+                  </div>
                 </div>
-            </div>
-        </section>
 
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!-- Qualification 2 -->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Online training courses
+                  </h3>
+                  <span class="qualification__subtitle">Udemy/YouTube</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 09/2018 - ...
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">CESS-Management of very small businesses</h3>
+                  <span class="qualification__subtitle">CEFA - Court Saint Etienne</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 09/2015 - 06/2018
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Qualification Content 2 -->
+            <div class="qualification__content" data-content id="work">
+               <!-- Qualification 1 -->
+               <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Front-end intern
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >JAK Solutions - Brussels</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 07/2022 - 08/2022
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!-- Qualification 2 -->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">
+                    Administrative assistant
+                  </h3>
+                  <span class="qualification__subtitle">Auditcom-Nivelles</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 07/2018 - ...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Qualification 3 -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Administrative trainee</h3>
+                  <span class="qualification__subtitle">Débit & Crédit-Nivelles</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 09/2015 - 06/2018
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">My work</span>
+
+        <div class="portfolio__container container swiper">
+            <div class="swiper-wrapper">
+              <!-- Developify 1 -->
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/developify.be.webp"
+                  alt="Developify index image"
+                  class="portfolio__img_tall"
+                />
+  
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">Developify</h3>
+                  <p class="portfolio__description">A web development agency showcase site</p>
+                  <a
+                    href="https://www.developify.be/" target="_blank"
+                    class="button button--flex button--small portfolio__button"
+                  >
+                    Developify.be
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+  
+              <!-- Developify 2 -->
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/developify.be_services.webp"
+                  alt="Developify Services page"
+                  class="portfolio__img_tall"
+                />
+  
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">Developify</h3>
+                  <p class="portfolio__description">Services page</p>
+                </div>
+              </div>
+  
+              <!-- Developify 3 -->
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/developify.be_about.webp"
+                  alt="Developify about page image"
+                  class="portfolio__img_tall"
+                />
+  
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">Developify</h3>
+                  <p class="portfolio__description">About page</p>
+                </div>
+              </div>
+  
+              <!-- Developify 4 -->
+              <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/developify.be_faq.webp"
+                  alt="Developify FAQ page image"
+                  class="portfolio__img_tall"
+                />
+  
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">Developify</h3>
+                  <p class="portfolio__description">
+                    FAQ page
+                  </p>
+                </div>
+              </div>
+
+               <!-- Developify 5 -->
+               <div class="portfolio__content grid swiper-slide">
+                <img
+                  src="assets/img/developify.be_contact.webp"
+                  alt="Developify contact page image"
+                  class="portfolio__img_larg"
+                />
+  
+                <div class="portfolio__data">
+                  <h3 class="portfolio__title">Developify</h3>
+                  <p class="portfolio__description">
+                    Contact page
+                  </p>
+                </div>
+              </div>
+  
+              
+            </div>
+  
+            <!-- Add arrows -->
+            <div class="swiper-button-next">
+              <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+  
+            <div class="swiper-button-prev">
+              <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+          </div>
+
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!-- Alien JDR 1 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/review.webp"
+                alt="Alien JDR summery image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">An RPG management tool</p>
+                <a
+                  href="https://github.com/davar96/Alien-jdr"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Alien JDR 2 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/AuthentificationView.webp"
+                alt="Alien JDR Authentification page image"
+                class="portfolio__img_tall"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">Authentication page</p>
+              </div>
+            </div>
+
+            <!-- Alien JDR 3 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/EnregistrementView.webp"
+                alt="Alien JDR Registration page image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">Registration page</p>
+              </div>
+            </div>
+
+            <!-- Alien JDR 4 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/CreerChoisirPers.webp"
+                alt="Alien JDR career creation page image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">
+                  Career choice/creation page
+                </p>
+              </div>
+            </div>
+
+            <!-- Alien JDR 5 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/SelectionCarriereEtRace.webp"
+                alt="Alien JDR career selection page image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">Careers page</p>
+              </div>
+            </div>
+
+            <!-- Alien JDR 6 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/FichePersonnage.webp"
+                alt="Alien JDR Characters sheet page image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">Character sheet</p>
+              </div>
+            </div>
+
+            <!-- Alien JDR 7 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/TalentsGeneraux.webp"
+                alt="Alien JDR talent choice page image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">Talent choice page</p>
+              </div>
+            </div>
+
+            <!-- Alien JDR 8 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/AttributsCompetences.webp"
+                alt="Alien JDR Attributes and Skills page image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">Attributes and Skills</p>
+              </div>
+            </div>
+
+            <!-- Alien JDR 9 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/Recapitulatif1.webp"
+                alt="Alien JDR character summery page image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Alien RPG</h3>
+                <p class="portfolio__description">Character Summary</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+        </div>
+
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!-- PID E-Commerce Website 1 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/PID-E-Commerce-Website-Main.webp"
+                alt="E-Commerce index page image"
+                class="portfolio__img_tall"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">E-Commerce Website</h3>
+                <p class="portfolio__description">Index page</p>
+                <a
+                  href="https://github.com/davar96/PID-E-Commerce-Website"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- PID E-Commerce Website 2 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/PID-E-Commerce-Website-Product.webp"
+                alt="E-Commerce products page image"
+                class="portfolio__img_tall"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">E-Commerce Website</h3>
+                <p class="portfolio__description">Product page</p>
+              </div>
+            </div>
+
+            <!-- PID E-Commerce Website 3 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/PID-E-Commerce-Website-CartEmpty.webp"
+                alt="E-Commerce Empty Cart page image"
+                class="portfolio__img_tall"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">E-Commerce Website</h3>
+                <p class="portfolio__description">Empty cart</p>
+              </div>
+            </div>
+
+            <!-- PID E-Commerce Website 4 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/PID-E-Commerce-Website-CartFull.webp"
+                alt="E-Commerce cart page with products image"
+                class="portfolio__img_tall"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">E-Commerce Website</h3>
+                <p class="portfolio__description">Cart with products</p>
+              </div>
+            </div>
+
+            <!-- PID E-Commerce Website 5 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/PID-E-Commerce-Website-Registration.webp"
+                alt="E-Commerce Registration page image"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">E-Commerce Website</h3>
+                <p class="portfolio__description">Registration page</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+        </div>
+
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!-- Fight Game -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/fightingGame.webp"
+                alt="2d fighting Game made with JavaScript"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Definitely Not MK</h3>
+                <p class="portfolio__description">JavaScript Game</p>
+                <a
+                  href="https://david-arustamyan-definitely-not-mk.netlify.app"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- SnakeJS -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/snakeJsReview.webp"
+                alt="Snake game made with Javascript"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">SnakeJS</h3>
+                <p class="portfolio__description">JavaScript Game</p>
+                <a
+                  href="https://david-arustamyan-snake-js.netlify.app"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- PIG GAME -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/pigGame.webp"
+                alt="Pig Game made with Javascript"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">PIG Game</h3>
+                <p class="portfolio__description">JavaScript Game</p>
+                <a
+                  href="https://david-arustamyan-pig-game.netlify.app"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Guessing game -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/guessingGame.webp"
+                alt="Guessing Game made with Javascript"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Guessing Game</h3>
+                <p class="portfolio__description">JavaScript Game</p>
+                <a
+                  href="https://david-arustamyan-guess-the-number.netlify.app"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- MarioJS 2 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/comingSoon.webp"
+                alt="Mario game made with Javascript coming soon"
+                class="portfolio__img_larg"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">MarioJS</h3>
+                <p class="portfolio__description">JavaScript Game</p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Coming soon
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- For employer -->
+      <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">
+                Do you need a junior front-end dev?
+              </h2>
+              <p class="project__description">Get in touch</p>
+
+              <a href="#contact" class="button button--flex button--white">
+                Contact me
+                <i class="uil uil-message project__icon button__icon"></i>
+              </a>
+            </div>
+
+            <img src="assets/img/thirdImg.webp" alt="David Arustamyan image with crossed arms" class="project__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact me</h2>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Mobile</h3>
+                <span class="contact__subtitle">+32/484-30-50-37</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">david.arustam96@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">1400 Nivelles - Belgium</span>
+              </div>
+            </div>
+
+            <form
+              action="https://formsubmit.co/david.arustam96@gmail.com"
+              method="POST"
+              class="contact__form grid"
+            >
+              <div class="contact__inputs grid">
+                <input
+                  type="hidden"
+                  class="contact__content"
+                  name="_subject"
+                  value="Proposition de stage!"
+                />
+
+                <div class="contact__content">
+                  <label for="" class="contact__label">Your name</label>
+                  <input
+                    type="text"
+                    class="contact__input"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <div class="contact__content">
+                  <label for="" class="contact__label">Your email</label>
+                  <input
+                    type="email"
+                    class="contact__input"
+                    name="email"
+                    required
+                  />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="http://david-arustamyan.s3-website.eu-west-3.amazonaws.com/thankYou.html"
+                  />
+                </div>
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea
+                  rows="5"
+                  cols="60"
+                  name="message"
+                  class="contact__input"
+                  required
+                ></textarea>
+              </div>
+
+              <div>
+                <button class="button button--flex button__icon" type="submit">
+                  Send<i class="uil uil-message"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">David Arustamyan</h1>
-                    <span class="footer__subtitle">Student in the 3rd year of a Bachelor's in Computer Science</span>
-                </div>
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">David Arustamyan</h1>
+            <span class="footer__subtitle">Junior Front-end developer</span>
+          </div>
 
-                <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/david-arustamyan" target="_blank" class="footer__social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/david-arustamyan"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
 
-                    <a href="https://github.com/davar96" target="_blank" class="footer__social">
-                        <i class="uil uil-github"></i>
-                    </a>
-                </div>
-            </div>
-
-            <p class="footer__copy">&#169; Arustamyan David. All right reserved</p>
+            <a
+              href="https://github.com/davar96"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-github"></i>
+            </a>
+          </div>
         </div>
 
+        <p class="footer__copy">&#169; Arustamyan David. All right reserved</p>
+      </div>
     </footer>
     <!-- Scroll to top -->
     <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up"></i>
+      <i class="uil uil-arrow-up"></i>
     </a>
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -973,6 +1203,5 @@
     <script src="assets/js/mediumZoom.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
