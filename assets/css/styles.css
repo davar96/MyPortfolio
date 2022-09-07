@@ -192,11 +192,8 @@ img {
 }
 
 .line-1 {
-  /* position: relative;
-  top: 50%;
-  width: 100%; */
   margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  border-right: 2px solid var(--first-color);
   font-size: 180%;
   text-align: center;
   white-space: nowrap;
@@ -453,6 +450,8 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+  border: none;
+  cursor: pointer;
 }
 
 /* About */
