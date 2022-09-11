@@ -132,7 +132,7 @@ a {
 }
 
 img {
-  max-width: auto;
+  max-width: 50vw;
   height: auto;
 }
 
