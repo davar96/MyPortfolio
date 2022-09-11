@@ -1025,7 +1025,7 @@ img {
 
 /* For tablets */
 
-@media screen and (max-width: 568px) {
+@media screen and (min-width: 568px) {
   /* .home__content {
     grid-template-columns: 1f 1fr 1fr;
   } */
