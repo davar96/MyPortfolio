@@ -1189,7 +1189,7 @@ img {
   } */
 
   .home__content {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .home__social {
