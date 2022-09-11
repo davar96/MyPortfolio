@@ -191,7 +191,7 @@ img {
   opacity: 1;
 }
 
-.line-1 {
+/* .line-1 {
   margin: 0 auto;
   border-right: 2px solid var(--first-color);
   font-size: 180%;
@@ -199,7 +199,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-}
+} */
 
 .anim-typewriter {
   animation: typewriter 4s steps(30) 1s 1 normal both,
