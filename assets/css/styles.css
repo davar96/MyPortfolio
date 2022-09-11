@@ -1188,9 +1188,9 @@ img {
     border-radius: 60% 40% 40% 20%;
   } */
 
-  /* .home__content {
-    grid-template-columns: 1fr 2fr;
-  } */
+  .home__content {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
 
   .home__social {
     transform: translateX(-6rem);
