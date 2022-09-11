@@ -326,7 +326,7 @@ img {
 }
 
 .home__content {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
 }
@@ -1006,7 +1006,7 @@ img {
     column-gap: 0;
   }
   .home__content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.25fr 3fr;
   }
   .home__blob {
     width: 180px;
@@ -1182,11 +1182,16 @@ img {
   .footer__container {
     padding: 0px;
   }
-  .home__blob {
-    /* width: 500px; */
+  /* .home__blob {
+    width: 500px;
     height: 30vh;
     border-radius: 60% 40% 40% 20%;
+  } */
+
+  .home__content {
+    grid-template-columns: 0.25fr 3fr;
   }
+
   .home__social {
     transform: translateX(-6rem);
   }
