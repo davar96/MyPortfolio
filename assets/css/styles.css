@@ -456,6 +456,10 @@ img {
 
 /* About */
 
+.about {
+  height: 100vh;
+}
+
 .about__img {
   width: 200px;
   border-radius: 90% 80% 90% 60%;
